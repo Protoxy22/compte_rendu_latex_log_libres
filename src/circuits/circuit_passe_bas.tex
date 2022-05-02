@@ -1,0 +1,22 @@
+    \begin{center}
+        \begin{circuitikz}
+          \draw (0,0) 
+              to [vsource, v=$E$] (0,3)
+              to[R, l=$R_0$] (3,3) 
+              to[L, l=$L_1$] (5,3)
+              to [C, l=$C_2$] (5,0) 
+              -- 
+              (5,3) to[L, l=$L_3$] (7,3) 
+              to[C, l=$C_4$] (7,0)
+              --
+              (7,3) to[L, l=$L_5$] (9,3) 
+              to[C, l=$C_6$] (9,0) 
+              -- 
+              (9,3) to (12,3) to[R, l=$R_7$ , v<=$S$] (12,0) 
+              -- (0,0);
+        \end{circuitikz}
+    \end{center}
+    
+    \begin{center}
+        \caption{Filtre passe-bas Chebyshev d'ordre 6 }   
+    \end{center}

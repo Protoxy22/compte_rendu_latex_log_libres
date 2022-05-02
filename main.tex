@@ -1,0 +1,30 @@
+\documentclass{report-UTC}
+% Pour retirer le thème couleur UTC,
+%   Commenter la ligne précédente
+%   Décommenter la ligne dessous
+% \documentclass[noUTCcolors]{report-UTC}
+
+\UV{Filtres analogiques} %Nom de l'UV
+\title{TP1: Filtrage passif}
+\author{{\sc Ahmed} Al-Kaff \\ {\sc Adrian} Bonventre}
+
+
+\begin{document}
+\subfile{src/titlePage}
+\tableofcontents{} %Commenter/supprimer pour enlever la table des matières
+
+\vspace{0.5cm} %À enlever
+
+% Décommenter les trois lignes ci-dessous pour sauter une page après la table des matières, et mettre celle-ci sur une page sans en-tête, pied de page et numéro (recommandé)
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\newpage
+
+
+\subfile{src/content}
+\subfile{src/mesure}
+\subfile{src/simulation}
+\subfile{src/conclusion}
+
+\end{document}
